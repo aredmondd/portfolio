@@ -6,29 +6,13 @@
     <title>AIDEN REDMOND</title>
     <link href="css/output.css" rel="stylesheet">
     <link rel="shortcut icon" href="images/logo_regular_icon.png" type="image/x-icon">
+    <script src="components/CustomNavbar.js" defer></script>
+    <script src="components/CustomFooter.js" defer></script>
 </head>
-<body class="mx-6 text-black">
-    <div class="flex justify-between items-center">
-        <a href="/"><img src="images/logo_regular.png" alt="" width="64"></a>
-        <a href="#" class="hover:text-pink">ART</a>
-        <a href="#" class="hover:text-pink">CODE</a>
-        <a href="photography-index.html" class="hover:text-pink">PHOTOGRAPHY</a>
-        <a href="#" class="hover:text-pink">RUNNING</a>
-        <a href="#" class="hover:text-pink">'TECH'</a> <!-- fav websites, app, and current hardware -->
-        <a href="#" class="hover:text-pink">CONTENT</a> <!-- music, games, anime, books, manga -->
-        <a href="#" class="hover:text-pink">CURRENT WORK</a>
-        <a href="#" class="hover:text-pink">BLOGS + UPDATES</a>
-    </div>
-    <div class="flex flex-col min-h-screen">
-        <h1 class="font-bold text-center mt-12 mb-6">digital photography (8/20/24 - 12/8/24)</h1>
-        <div class="flex justify-between mx-24">
-            <a class="hover:text-pink" href="">aperture & shutter speed</a>
-            <a class="hover:text-pink" href="">shadow and light</a>
-            <a class="hover:text-pink" href="">still life</a>
-            <a class="hover:text-pink" href="">portraits - 'disconnected'</a>
-            <a class="hover:text-pink" href="">self portraits</a>
-            <a class="text-pink font-bold hover:text-pink" href="non-project-photography.html">non-project photos</a>
-        </div>  
+<body class= "bg-black flex flex-col min-h-screen mx-6 text-white">
+    <custom-navbar></custom-navbar>
+
+    <div class="flex flex-1">
         <div class="flex-1 columns-3 gap-4 space-y-4 my-6">
             <!-- col 1 -->
             <img src="https://res.cloudinary.com/dkznczrj0/image/upload/v1733704780/_MG_9582_p71xdd.jpg" alt="up close christopher" onclick="openModal(this.src)">
@@ -89,44 +73,10 @@
                 <img id="modalImage" src="" class="max-w-full max-h-screen my-12">
             </div>
         </div>
-
-        <footer class="flex justify-between mb-6">
-            <p>all</p>
-            <p>aspects</p>
-            <p>of</p>
-            <p>this</p>
-            <p>website</p>
-            <p>were</p>
-            <p>designed</p>
-            <p>and</p>
-            <p>implemented</p>
-            <p>by</p>
-            <p>aiden</p>
-            <p>michael</p>
-            <p>redmond</p>
-            <p>(2024)</p>
-            <p>.</p>
-        </footer>
     </div>
+
+    <custom-footer class="mb-2"></custom-footer>
+
+    <script src="js/Modal.js"></script>
 </body>
 </html>
-
-<script>
-    function openModal(imageSrc) {
-        // Set the image source
-        const modalImage = document.getElementById("modalImage");
-        modalImage.src = imageSrc;
-
-        // Show the modal
-        const modal = document.getElementById("imageModal");
-        modal.classList.remove("hidden");
-    }
-
-    function closeModal(event) {
-        const modalImage = document.getElementById("modalImage");
-        if (event.target !== modalImage) {
-            const modal = document.getElementById("imageModal");
-            modal.classList.add("hidden");
-        }
-    }
-</script>
