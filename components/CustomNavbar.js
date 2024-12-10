@@ -3,16 +3,14 @@ class CustomNavbar extends HTMLElement {
     constructor() {
         super();
 
-        // Attach a shadow DOM to this element
         const shadow = this.attachShadow({ mode: "open" });
 
-        // Add Tailwind CSS to the shadow DOM
+        // Add Tailwind CSS
         const link = document.createElement('link');
         link.rel = 'stylesheet';
-        link.href = 'css/output.css';  // Make sure the path is correct
+        link.href = 'css/output.css';
         shadow.appendChild(link);
 
-        // Create the structure for the component
         shadow.innerHTML += `
             <div class="flex justify-between items-center">
                 <a href="/"><img src="images/logo_regular.png" alt="" width="64"></a>
@@ -29,5 +27,4 @@ class CustomNavbar extends HTMLElement {
     }
 }
 
-// Define the custom element
 customElements.define("custom-navbar", CustomNavbar);
