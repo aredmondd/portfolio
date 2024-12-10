@@ -34,7 +34,7 @@ function updateCarousel(index) {
 }
 
 prevBtn.addEventListener('click', () => {
-    currentSlide = currentSlide === 0 ? slides.length - 1 : currentSlide - 1;
+    currentSlide = currentSlide === 0 ? slides.length - 2 : currentSlide - 1;
     updateCarousel(currentSlide);
 });
 
@@ -45,7 +45,7 @@ nextBtn.addEventListener('click', () => {
 
 // Adjust carousel on window resize
 window.addEventListener('resize', () => {
-    const slideWidth = getSlideWidth();  // Recalculate slide width on resize
+    const slideWidth = getSlideWidth(); 
     track.style.transition = 'none';
     track.style.transform = `translateX(-${slideWidth * currentSlide}px)`;
 });
@@ -53,8 +53,8 @@ window.addEventListener('resize', () => {
 // Add keyboard event listener for arrow keys
 document.addEventListener('keydown', (event) => {
     if (event.key === 'ArrowRight') {
-        nextBtn.click(); // Trigger the next button click
+        nextBtn.click();
     } else if (event.key === 'ArrowLeft') {
-        prevBtn.click(); // Trigger the previous button click
+        prevBtn.click();
     }
 });
