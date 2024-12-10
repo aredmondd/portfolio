@@ -1,60 +1,65 @@
-const track = document.querySelector('.carousel-track');
-const slides = Array.from(track.children);
-const prevBtn = document.getElementById('prevBtn');
-const nextBtn = document.getElementById('nextBtn');
+document.addEventListener("DOMContentLoaded", () => {
+    const track = document.querySelector(".carousel-track");
+    const slides = Array.from(track.children);
+    const prevButton = document.getElementById("prevBtn");
+    const nextButton = document.getElementById("nextBtn");
 
-// Dynamically calculate the width of the current slide
-function getSlideWidth() {
-    return slides[0].getBoundingClientRect().width; // Get width of the first slide
-}
+    const slideWidth = slides[0].getBoundingClientRect().width;
 
-let currentSlide = 1; // Start at the first "real" slide
-track.style.transition = 'none'; // Prevent initial transition
-track.style.transform = `translateX(-${getSlideWidth() * currentSlide}px)`;
+    // Prevent transitions during initialization
+    track.style.transition = "none";
+    track.style.transform = `translateX(-${slideWidth}px)`;
 
-function updateCarousel(index) {
-    const slideWidth = getSlideWidth(); // Recalculate slide width during the update
-    track.style.transition = 'transform 0.4s ease-in-out';
-    track.style.transform = `translateX(-${slideWidth * index}px)`;
+    let currentIndex = 1;
 
-    track.addEventListener('transitionend', () => {
-        if (slides[index].alt === `image_${slides.length - 2}`) {
-            // If at the duplicate last slide, jump to real last slide
-            track.style.transition = 'none';
-            currentSlide = slides.length - 2;
-            track.style.transform = `translateX(-${slideWidth * currentSlide}px)`;
-        }
-        if (slides[index].alt === 'image_1') {
-            // If at the duplicate first slide, jump to real first slide
-            track.style.transition = 'none';
-            currentSlide = 1;
-            track.style.transform = `translateX(-${slideWidth * currentSlide}px)`;
-        }
-    }, { once: true });
-}
-
-prevBtn.addEventListener('click', () => {
-    currentSlide = currentSlide === 0 ? slides.length - 2 : currentSlide - 1;
-    updateCarousel(currentSlide);
-});
-
-nextBtn.addEventListener('click', () => {
-    currentSlide = currentSlide === slides.length - 1 ? 0 : currentSlide + 1;
-    updateCarousel(currentSlide);
-});
-
-// Adjust carousel on window resize
-window.addEventListener('resize', () => {
-    const slideWidth = getSlideWidth(); 
-    track.style.transition = 'none';
-    track.style.transform = `translateX(-${slideWidth * currentSlide}px)`;
-});
-
-// Add keyboard event listener for arrow keys
-document.addEventListener('keydown', (event) => {
-    if (event.key === 'ArrowRight') {
-        nextBtn.click();
-    } else if (event.key === 'ArrowLeft') {
-        prevBtn.click();
+    function moveToSlide(index) {
+        track.style.transition = "transform 0.5s ease-in-out";
+        track.style.transform = `translateX(-${slideWidth * index}px)`;
     }
+
+    function handleNext() {
+        if (currentIndex >= slides.length - 1) {
+            // Seamless jump to the first actual slide
+            track.style.transition = "none";
+            currentIndex = 1;
+            track.style.transform = `translateX(-${slideWidth * currentIndex}px)`;
+        }
+        currentIndex++;
+        requestAnimationFrame(() => moveToSlide(currentIndex));
+    }
+
+    function handlePrev() {
+        if (currentIndex <= 0) {
+            // Seamless jump to the last actual slide
+            track.style.transition = "none";
+            currentIndex = slides.length - 2;
+            track.style.transform = `translateX(-${slideWidth * currentIndex}px)`;
+        }
+        currentIndex--;
+        requestAnimationFrame(() => moveToSlide(currentIndex));
+    }
+
+    nextButton.addEventListener("click", handleNext);
+    prevButton.addEventListener("click", handlePrev);
+
+    // Auto adjust when the window resizes
+    window.addEventListener("resize", () => {
+        const newSlideWidth = slides[0].getBoundingClientRect().width;
+        track.style.transition = "none";
+        track.style.transform = `translateX(-${newSlideWidth * currentIndex}px)`;
+    });
+
+    // Keyboard navigation
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "ArrowRight") {
+            nextButton.click();
+        } else if (event.key === "ArrowLeft") {
+            prevButton.click();
+        }
+    });
+
+    // Re-enable transition after initial setup
+    setTimeout(() => {
+        track.style.transition = "transform 0.5s ease-in-out";
+    }, 0); // Re-enable transition immediately after initial render
 });
