@@ -8,15 +8,15 @@ class CustomNavbar extends HTMLElement {
         // Add Tailwind CSS
         const link = document.createElement('link');
         link.rel = 'stylesheet';
-        link.href = 'css/output.css';
+        link.href = '../css/output.css';
         shadow.appendChild(link);
 
         shadow.innerHTML += `
             <div class="flex justify-between items-center">
-                <a href="/"><img src="images/logo_regular.png" alt="" width="64"></a>
+                <a href="/"><img src="../images/logo_regular.png" alt="" width="64"></a>
                 <a href="#" class="hover:text-pink">ART</a>
                 <a href="#" class="hover:text-pink">CODE</a>
-                <a href="photography-index.html" class="hover:text-pink">PHOTOGRAPHY</a>
+                <a href="/photography/photography-index.html" class="hover:text-pink">PHOTOGRAPHY</a>
                 <a href="#" class="hover:text-pink">RUNNING</a>
                 <a href="#" class="hover:text-pink">'TECH'</a>
                 <a href="#" class="hover:text-pink">CONTENT</a>

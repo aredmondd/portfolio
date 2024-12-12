@@ -9,7 +9,7 @@ class CustomFooter extends HTMLElement {
         // Add Tailwind CSS to the shadow DOM
         const link = document.createElement('link');
         link.rel = 'stylesheet';
-        link.href = 'css/output.css';
+        link.href = '../css/output.css';
         shadow.appendChild(link);
 
         // Create the structure for the component
