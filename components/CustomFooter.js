@@ -20,6 +20,8 @@ class CustomFooter extends HTMLElement {
                 <p class="hover:text-pink transition-all duration-250 ease-in-out">of</p>
                 <p class="hover:text-pink transition-all duration-250 ease-in-out">this</p>
                 <p class="hover:text-pink transition-all duration-250 ease-in-out">website</p>
+                <p class="hover:text-pink transition-all duration-250 ease-in-out">and</p>
+                <p class="hover:text-pink transition-all duration-250 ease-in-out">portfolio</p>
                 <p class="hover:text-pink transition-all duration-250 ease-in-out">were</p>
                 <p class="hover:text-pink transition-all duration-250 ease-in-out">designed</p>
                 <p class="hover:text-pink transition-all duration-250 ease-in-out">and</p>

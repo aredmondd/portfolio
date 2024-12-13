@@ -21,7 +21,7 @@ class CustomNavbar extends HTMLElement {
                 <a href="/tech.html" class="hover:text-pink">'TECH'</a>
                 <a href="/content.html" class="hover:text-pink">CONTENT</a>
                 <a href="/current_work.html" class="hover:text-pink">CURRENT WORK</a>
-                <a href="/updates.html" class="hover:text-pink">UPDATES</a>
+                <a href="/updates.html" class="hover:text-pink">MORE</a>
             </div>
         `;
     }
