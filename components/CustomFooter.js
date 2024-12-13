@@ -14,7 +14,7 @@ class CustomFooter extends HTMLElement {
 
         // Create the structure for the component
         shadow.innerHTML += `
-            <footer class="flex justify-between text-white text-opacity-50">
+            <footer class="flex justify-between text-white opacity-10">
                 <p class="hover:text-pink transition-all duration-250 ease-in-out">all</p>
                 <p class="hover:text-pink transition-all duration-250 ease-in-out">aspects</p>
                 <p class="hover:text-pink transition-all duration-250 ease-in-out">of</p>
