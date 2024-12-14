@@ -1,7 +1,11 @@
+<script setup>
+import { RouterLink } from 'vue-router'
+</script>
+
 <template>
     <main class="flex justify-end flex-1 space-x-64">
         <div class="flex flex-col mt-36">
-            <h2>photography</h2>
+            <RouterLink to="/photography" class="hover:text-pink">photography</RouterLink>
             <h2>art & graphic design</h2>
         </div>
         <div class="flex flex-col space-y-6">
