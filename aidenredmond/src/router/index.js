@@ -10,6 +10,8 @@ import StillLife from '@/views/PhotographyViews/StillLife.vue'
 import PortraitsDiconnected from '@/views/PhotographyViews/PortraitsDiconnected.vue'
 import SelfPortraits from '@/views/PhotographyViews/SelfPortraits.vue'
 import NonProjectPhotos from '@/views/PhotographyViews/NonProjectPhotos.vue'
+import ArtAndGraphicDesignView from '@/views/ArtAndGraphicDesignView.vue'
+import Content from '@/views/Content.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -68,6 +70,16 @@ const router = createRouter({
         path: '/photography/non-project-photos',
         name: 'nonprojectphotos',
         component: NonProjectPhotos,
+    },
+    {
+        path: '/art',
+        name: 'art',
+        component: ArtAndGraphicDesignView,
+    },
+    {
+        path: '/more/content',
+        name: 'content',
+        component: Content,
     },
   ],
 })

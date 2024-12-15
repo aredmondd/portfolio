@@ -1,7 +1,6 @@
 <template>
     <div class="flex flex-1">
         <div class="flex-1 columns-3 gap-4 space-y-4 my-6">
-            <!-- Images with @click event binding -->
             <img 
                 v-for="(image, index) in images" 
                 :key="index" 
@@ -19,7 +18,6 @@
             @click="closeModal"
         >
             <div class="relative">
-                <!-- Modal Content -->
                 <img 
                     id="modalImage" 
                     :src="modalImage" 

@@ -10,8 +10,7 @@ module.exports = {
             'black' : '#0f1109',
             'white' : '#DBDCD0',
             'green' : '#3C4B35',
-            'light-blue' : '#a7cec2',
-            'dark-blue' : '#7dacb7',
+            'blue' : '#2D7DD2',
             'pink' : '#FF5964'
         },
         animation: {

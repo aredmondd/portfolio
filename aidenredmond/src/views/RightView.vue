@@ -6,7 +6,8 @@ import { RouterLink } from 'vue-router'
     <main class="flex justify-end flex-1 space-x-64">
         <div class="flex flex-col mt-36">
             <RouterLink to="/photography" class="hover:text-pink">photography</RouterLink>
-            <h2>art & graphic design</h2>
+            <RouterLink to="/art" class="hover:text-pink">art & graphic design</RouterLink>
+
         </div>
         <div class="flex flex-col space-y-6">
             <h1 class="text-right font-bold text-5xl mt-12">right</h1>
