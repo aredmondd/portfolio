@@ -16,13 +16,13 @@
 		</div>
 		<!-- Navigation Controls -->
 		<button
-			class="absolute top-1/2 left-0 transform -translate-y-1/2 text-white p-2 rounded-full hover:bg-pink transition-all duration-500 ease-in-out"
+			class="absolute top-1/2 left-0 transform -translate-y-1/2 text-black p-2 rounded-full hover:bg-pink transition-all duration-500 ease-in-out"
 			@click="handlePrev"
 		>
 			&#9664;
 		</button>
 		<button
-			class="absolute top-1/2 right-0 transform -translate-y-1/2 text-white p-2 rounded-full hover:bg-pink transition-all duration-500 ease-in-out"
+			class="absolute top-1/2 right-0 transform -translate-y-1/2 text-black p-2 rounded-full hover:bg-pink transition-all duration-500 ease-in-out"
 			@click="handleNext"
 		>
 			&#9654;

@@ -1,17 +1,16 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-import LeftView from '../views/LeftView.vue'
-import RightView from '../views/RightView.vue'
-import MoreView from '../views/MoreView.vue'
-import PhotographyIndexView from '../views/PhotographyIndexView.vue'
-import ApertureShutterSpeed from '@/views/PhotographyViews/ApertureShutterSpeed.vue'
-import ShadowLight from '@/views/PhotographyViews/ShadowLight.vue'
-import StillLife from '@/views/PhotographyViews/StillLife.vue'
-import PortraitsDiconnected from '@/views/PhotographyViews/PortraitsDiconnected.vue'
-import SelfPortraits from '@/views/PhotographyViews/SelfPortraits.vue'
-import NonProjectPhotos from '@/views/PhotographyViews/NonProjectPhotos.vue'
-import ArtAndGraphicDesignView from '@/views/ArtAndGraphicDesignView.vue'
-import Content from '@/views/Content.vue'
+import IndexView from '../views/IndexView.vue'
+import OfficiallyView from '../views/OfficiallyView.vue'
+import MoreView from '../views/Unofficially/MoreView.vue'
+import PhotographyIndexView from '../views/Unofficially/PhotographyIndexView.vue'
+import ApertureShutterSpeed from '@/views/Unofficially/PhotographyViews/ApertureShutterSpeed.vue'
+import ShadowLight from '@/views/Unofficially/PhotographyViews/ShadowLight.vue'
+import StillLife from '@/views/Unofficially/PhotographyViews/StillLife.vue'
+import PortraitsDiconnected from '@/views/Unofficially/PhotographyViews/PortraitsDiconnected.vue'
+import SelfPortraits from '@/views/Unofficially/PhotographyViews/SelfPortraits.vue'
+import NonProjectPhotos from '@/views/Unofficially/PhotographyViews/NonProjectPhotos.vue'
+import Content from '@/views/Unofficially/Content.vue'
+import UnofficiallyView from '@/views/UnofficiallyView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -19,17 +18,17 @@ const router = createRouter({
     {
         path: '/',
         name: 'home',
-        component: HomeView,
+        component: IndexView,
     },
     {
-        path: '/left',
-        name: 'left',
-        component: LeftView,
+        path: '/unofficially',
+        name: 'unofficially',
+        component: UnofficiallyView,
     },
     {
-        path: '/right',
-        name: 'right',
-        component: RightView,
+        path: '/officially',
+        name: 'officially',
+        component: OfficiallyView,
     },
     {
         path: '/more',
@@ -70,11 +69,6 @@ const router = createRouter({
         path: '/photography/non-project-photos',
         name: 'nonprojectphotos',
         component: NonProjectPhotos,
-    },
-    {
-        path: '/art',
-        name: 'art',
-        component: ArtAndGraphicDesignView,
     },
     {
         path: '/more/content',
