@@ -5,12 +5,12 @@ import { RouterLink } from 'vue-router'
 <template>
     <main class="flex flex-col flex-1">
         <h1 class="text-center text-4xl font-bold mt-12">officially, aiden redmond</h1>
-        <div class="flex flex-col items-center justify-start my-36">
+        <div class="flex flex-col items-center justify-start my-48">
             <div class="flex flex-col">
                 <p>
                     official. he will <br>
-                    show value through experience. <br>
-                    he wants more of it.
+                    show his strengths and experience <br>
+                    to earn more of it.
                 </p>
             </div>
         </div>

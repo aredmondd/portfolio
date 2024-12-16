@@ -5,7 +5,7 @@ import { RouterLink } from 'vue-router'
 <template>
     <main class="flex flex-col flex-1">
         <h1 class="text-center text-4xl font-bold mt-12">unofficially, aiden redmond</h1>
-        <div class="flex flex-col items-center justify-start my-36">
+        <div class="flex flex-col items-center justify-start my-48">
             <div class="flex flex-col">
                 <p>
                     unofficial. he <br>
@@ -14,12 +14,54 @@ import { RouterLink } from 'vue-router'
                 </p>
             </div>
         </div>
-        <h2 class="text-3xl font-bold my-12">what i'm watching/reading/playing/consuming/loving</h2>
-        <ContentScroller :images="images"/>
+        <h2 class="text-3xl font-bold mt-12 mb-6">what i'm loving</h2>
+        <h3 class="text-right mb-12">a large part of my inspiration comes from media. <br>here's what i'm into right now. <br>you can check out some of my reviews <RouterLink to="/photography" class="underline underline-offset-4 hover:text-pink transition-all duration-300 ease-in-out">here &#x2197;</RouterLink></h3>
+        <ContentScroller :images="images" class="mb-48"/>
 
-        <h2 class="text-right text-3xl font-bold my-12">photography</h2>
+        <h2 class="text-right text-3xl font-bold mt-12 mb-6">photography</h2>
+        <h3 class="text mb-12">when i'm not working, running, or consuming media - i'm taking photos. <br> here are some of my favorites, but can you check out more <RouterLink to="/photography" class="underline underline-offset-4 hover:text-pink transition-all duration-300 ease-in-out">here &#x2197;</RouterLink></h3>
 
-        <h2 class="text-3xl font-bold my-12">mft (my favorite things)</h2>
+
+        <div class="grid grid-cols-4 gap-4">
+            <div class="grid gap-4">
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="https://res.cloudinary.com/dkznczrj0/image/upload/v1733704772/_MG_8206_tv3qin.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="https://res.cloudinary.com/dkznczrj0/image/upload/v1734363767/DSC00374_esme4j.jpg" alt="">
+                </div>
+            </div>
+            <div class="grid gap-4">
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="https://res.cloudinary.com/dkznczrj0/image/upload/v1734363314/_MG_9430_lcteaz.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="https://res.cloudinary.com/dkznczrj0/image/upload/v1733704776/_MG_9121_rlj0zf.jpg" alt="">
+                </div>
+            </div>
+            <div class="grid gap-4">
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="https://res.cloudinary.com/dkznczrj0/image/upload/v1733780751/_MG_0884_cropped_fb9zep.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="https://res.cloudinary.com/dkznczrj0/image/upload/v1734363821/DSC01004_l2iotu.jpg" alt="">
+                    
+                </div>
+            </div>
+            <div class="grid gap-4">
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="https://res.cloudinary.com/dkznczrj0/image/upload/v1734363356/_MG_9558_whoncd.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="https://res.cloudinary.com/dkznczrj0/image/upload/v1733763915/_MG_8718_au610y.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <h2 class="text-3xl font-bold mt-12 mb-6">mft (my favorite things)</h2>
+        <h3 class="text-right mb-12">this section is inspired by <a href="https://www.iamrob.in/bookmarks" target="_blank" class="underline underline-offset-4">iamrobin's bookmarks</a>. <br> here are some of my favorite websites, tools, articles, and more.</h3>
+
     </main>
 </template>
 
