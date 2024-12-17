@@ -14,52 +14,33 @@ import { RouterLink } from 'vue-router'
                 </p>
             </div>
         </div>
-        <!-- <div class="flex justify-between mb-48">
-            <h2 class="text-5xl font-bold underline underline-offset-8 decoration-[6px]">01 PROFILE</h2>
-            <h2 class="text-xl text-right">A student-athlete with a passion to combine his technical skills <br>with his creative ones to craft unique digital experiences.</h2>
-        </div>
 
-        <div class="flex justify-between mb-48">
-            <h2 class="text-5xl font-bold underline underline-offset-8 decoration-[6px]">02 EDUCATION</h2>
-            <div class="flex flex-col">
-                <h2 class="text-3xl font-bold text-right">Florida Southern College</h2>
-                <h3 class="text-xl text-right">B.S in Computer Science (Web & Cloud Computing) <br> Minor in Graphic Design</h3>
+        <h2 class="text-center text-4xl font-bold">check out some of my projects:</h2>
+        <p class="text-sm text-center">(click on one to learn more)</p>
+        <div class="grid grid-cols-3 place-items-center gap-24 m-24">
+            <div class="flex flex-col h-full">
+                <div class="flex items-center justify-center h-full rounded-lg hover:bg-[#0A1826] transition-all duration-500 ease-in-out">
+                    <img src="/src/assets/RESERVOIR.PNG">
+                </div>
+                <p class="text-center mt-6">a social media tracking web app</p>
+                <p class="text-center mt-1">senior project - fall 2024</p>
+            </div>
+            <div class="flex flex-col h-full">
+                <div class="flex items-center justify-center h-full rounded-lg hover:bg-[#f1cd9d] transition-all duration-500 ease-in-out">
+                    <img src="/src/assets/NIHONGO.PNG">
+                </div>
+                <p class="text-center mt-6">a language-learning app focused on Japanese</p>
+                <p class="text-center mt-1">software engineering - fall 2024</p>
+            </div>
+            <div class="flex flex-col h-full">
+                <div class="flex items-center justify-center h-full rounded-lg hover:bg-[#ffffff] transition-all duration-500 ease-in-out hover:invert">
+                    <img src="/src/assets/JASIAH.PNG">
+                </div>
+                <p class="text-center mt-6">an automated inventory management script</p>
+                <p class="text-center mt-1">alter ego running - summer 2024</p>
             </div>
         </div>
 
-        <div class="flex justify-between mb-48">
-            <h2 class="text-5xl font-bold underline underline-offset-8 decoration-[6px]">03 EXPERIENCE</h2>
-            <div class="flex flex-col">
-                <h2 class="text-3xl font-bold text-right">Business Development Analyst at Alter Ego Running</h2>
-                <ul class="flex flex-col space-y-3 ml-6">
-                    <li>• Redesigned the inventory tracking system using JS & Shopify increasing efficiency by over 60%.</li>
-                    <li>
-                        • Implemented a new helpdesk management system (Gorgias), organized customer service <br>
-                        workflows, and trained multiple staff members on software usage for operational efficiency.
-                    </li>
-                    <li>
-                        • Designed a system to optimize product flow, label & identify items, and streamline the process of <br>
-                        receiving and updating new inventory.
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="flex justify-between mb-48">
-            <h2 class="text-5xl font-bold underline underline-offset-8 decoration-[6px]">04 HIGHLIGHTS</h2>
-            <div class="flex flex-col">
-                <h2 class="text-3xl font-bold text-right">Reservoir</h2>
-                <h2 class="text-3xl font-bold text-right">J.A.S.I.A.H</h2>
-                <h2 class="text-3xl font-bold text-right">nihonGO!</h2>
-            </div>
-        </div>
-
-        <div class="flex justify-between mb-48">
-            <h2 class="text-5xl font-bold underline underline-offset-8 decoration-[6px]">05 SKILLS</h2>
-            <div class="flex flex-col">
-                <h2 class="text-3xl font-bold text-right">Proficient</h2>
-                <h2 class="text-3xl font-bold text-right">Familiar</h2>
-            </div>
-        </div> -->
+        <h2 class="text-center text-4xl font-bold my-24">and some more about me...</h2>
     </main>
 </template>

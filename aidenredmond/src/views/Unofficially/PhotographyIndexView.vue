@@ -18,7 +18,7 @@ import { RouterLink } from 'vue-router'
 
         <div>
             <h1 class="font-bold mb-6">the final spring (12/12/24 - 5/3/24)</h1>
-            <p class="text-black text-opacity-50">so empty...</p>
+            <RouterLink to="/photography/186000" class="hover:text-pink">186000</RouterLink>
         </div>
     </div>
 </template>
