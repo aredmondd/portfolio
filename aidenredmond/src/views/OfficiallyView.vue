@@ -20,21 +20,21 @@ import { RouterLink } from 'vue-router'
         <div class="grid grid-cols-3 place-items-center gap-24 m-24">
             <div class="flex flex-col h-full">
                 <div class="flex items-center justify-center h-full rounded-lg hover:bg-[#0A1826] transition-all duration-500 ease-in-out">
-                    <img src="/src/assets/RESERVOIR.PNG">
+                    <img src="../assets/RESERVOIR.PNG">
                 </div>
                 <p class="text-center mt-6">a social media tracking web app</p>
                 <p class="text-center mt-1">senior project - fall 2024</p>
             </div>
             <div class="flex flex-col h-full">
                 <div class="flex items-center justify-center h-full rounded-lg hover:bg-[#f1cd9d] transition-all duration-500 ease-in-out">
-                    <img src="/src/assets/NIHONGO.PNG">
+                    <img src="../assets/NIHONGO.PNG">
                 </div>
                 <p class="text-center mt-6">a language-learning app focused on Japanese</p>
                 <p class="text-center mt-1">software engineering - fall 2024</p>
             </div>
             <div class="flex flex-col h-full">
                 <div class="flex items-center justify-center h-full rounded-lg hover:bg-[#ffffff] transition-all duration-500 ease-in-out hover:invert">
-                    <img src="/src/assets/JASIAH.PNG">
+                    <img src="../assets/JASIAH.PNG">
                 </div>
                 <p class="text-center mt-6">an automated inventory management script</p>
                 <p class="text-center mt-1">alter ego running - summer 2024</p>
