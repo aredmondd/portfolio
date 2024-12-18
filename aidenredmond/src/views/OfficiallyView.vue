@@ -16,26 +16,26 @@ import { RouterLink } from 'vue-router'
         </div>
 
         <!-- PROJECTS SECTION -->
-        <h2 class="text-center text-5xl font-bold underline underline-offset-8 decoration-[6px]">PROJECTS</h2>
+        <h2 class="text-center text-5xl font-bold">PROJECTS</h2>
         <p class="text-black text-opacity-50 text-sm text-center mt-3">(click on one to learn more)</p>
         <div class="grid grid-cols-3 place-items-center gap-24 m-24 mb-48">
             <div class="flex flex-col h-full">
                 <div class="flex items-center justify-center h-full rounded-lg hover:bg-[#0A1826] transition-all duration-500 ease-in-out">
-                    <img src="../assets/RESERVOIR.png">
+                    <img src="../assets/images/RESERVOIR.png">
                 </div>
                 <p class="text-lg text-center mt-6">A social platform for media tracking</p>
                 <p class="text-md text-black text-opacity-50 text-sm text-center mt-1">Senior Project - Fall 2024</p>
             </div>
             <div class="flex flex-col h-full">
                 <div class="flex items-center justify-center h-full rounded-lg hover:bg-[#f1cd9d] transition-all duration-500 ease-in-out">
-                    <img src="../assets/NIHONGO.png">
+                    <img src="../assets/images/NIHONGO.png">
                 </div>
                 <p class="text-center mt-6">A language-learning app focused on Japanese</p>
                 <p class="text-black text-opacity-50 text-sm text-center mt-1">Software Engineering - Fall 2024</p>
             </div>
             <div class="flex flex-col h-full">
                 <div class="flex items-center justify-center h-full rounded-lg hover:bg-[#ffffff] transition-all duration-500 ease-in-out hover:invert">
-                    <img src="../assets/JASIAH.png">
+                    <img src="../assets/images/JASIAH.png">
                 </div>
                 <p class="text-center mt-6">An automated inventory management script</p>
                 <p class="text-black text-opacity-50 text-sm text-center mt-1">Alter Ego Running - Summer 2024</p>
@@ -47,7 +47,7 @@ import { RouterLink } from 'vue-router'
             <h2 class="text-5xl font-bold underline underline-offset-8 decoration-[6px]">PROFILE</h2>
             <div class="flex flex-col">
                 <div class="flex items-center justify-start">
-                    <img src="../assets/logo_regular.png" alt="" width="50">
+                    <img src="../assets/images/logo_regular.png" alt="" width="50">
                     <h2 class="text-3xl font-bold text-right ml-2">Aiden Redmond</h2>
                 </div>
                 <p class="text-sm text-black text-opacity-50 mt-1">web developer, student-athlete, artist</p>
@@ -67,7 +67,7 @@ import { RouterLink } from 'vue-router'
             <h2 class="text-5xl font-bold underline underline-offset-8 decoration-[6px]">EDUCATION</h2>
             <div class="flex flex-col">
                 <div class="flex items-start justify-start">
-                    <img src="../assets/FSC.svg" alt="" width="30">
+                    <img src="../assets/images/FSC.svg" alt="" width="30">
                     <h2 class="text-3xl font-bold ml-3">Florida Southern College</h2>
                 </div>
                 <p class="text-sm text-black text-opacity-50">Aug 2021 - May 2025</p>
@@ -81,7 +81,7 @@ import { RouterLink } from 'vue-router'
             <h2 class="text-5xl font-bold underline underline-offset-8 decoration-[6px]">EXPERIENCE</h2>
             <div class="flex flex-col">
                 <div class="flex items-center justify-start">
-                    <img src="../assets/AER_LOGO.png" alt="" width="30">
+                    <img src="../assets/images/AER_LOGO.png" alt="" width="30">
                     <h2 class="text-3xl font-bold text-right ml-2">Alter Ego Running</h2>
                 </div>
                 <p class="text-sm text-black text-opacity-50 mt-1">Business Development Analyst - Summer 2023, 2024</p>
@@ -104,21 +104,21 @@ import { RouterLink } from 'vue-router'
                 <div class="flex">
                     <h2 class="text-3xl font-bold mr-6">Proficient:</h2>
                     <div class="flex space-x-4">
-                        <img src="../assets/laravel.png" alt="" class="h-10">
-                        <img src="../assets/tailwind.png" alt="" class="h-10">
-                        <img src="../assets/github.png" alt="" class="h-10">
-                        <img src="../assets/html.png" alt="" class="h-10">
-                        <img src="../assets/css.png" alt="" class="h-10">
-                        <img src="../assets/js.png" alt="" class="h-10">
-                        <img src="../assets/php.png" alt="" class="h-10">
+                        <img src="../assets/images/laravel.png" alt="" class="h-10">
+                        <img src="../assets/images/tailwind.png" alt="" class="h-10">
+                        <img src="../assets/images/github.png" alt="" class="h-10">
+                        <img src="../assets/images/html.png" alt="" class="h-10">
+                        <img src="../assets/images/css.png" alt="" class="h-10">
+                        <img src="../assets/images/js.png" alt="" class="h-10">
+                        <img src="../assets/images/php.png" alt="" class="h-10">
                     </div>
                 </div>
                 <div class="flex">
                     <h2 class="text-3xl font-bold mr-6">Familiar:</h2>
                     <div class="flex space-x-4">
-                        <img src="../assets/vue.png" alt="" class="h-10">
-                        <img src="../assets/python.png" alt="" class="h-10">
-                        <img src="../assets/firebase.png" alt="" class="h-10">
+                        <img src="../assets/images/vue.png" alt="" class="h-10">
+                        <img src="../assets/images/python.png" alt="" class="h-10">
+                        <img src="../assets/images/firebase.png" alt="" class="h-10">
                     </div>
                 </div>
             </div>
