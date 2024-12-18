@@ -10,6 +10,7 @@ import SelfPortraits from '@/views/Unofficially/PhotographyViews/SelfPortraits.v
 import NonProjectPhotos from '@/views/Unofficially/PhotographyViews/NonProjectPhotos.vue'
 import UnofficiallyView from '@/views/UnofficiallyView.vue'
 import Eighteen6000 from '@/views/Unofficially/PhotographyViews/Eighteen6000.vue'
+import NotFound from '@/views/NotFound.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -68,7 +69,11 @@ const router = createRouter({
         path: '/photography/186000',
         name: '186000',
         component: Eighteen6000
-    }
+    },
+    {
+        path: '/:pathMatch(.*)*',
+        component: NotFound
+    },
   ],
 })
 
