@@ -22,36 +22,52 @@ import { RouterLink } from 'vue-router'
         <div class="grid grid-cols-4 gap-4 mb-48">
             <div class="grid gap-4">
                 <div>
-                    <img class="h-auto max-w-full rounded-lg" src="https://res.cloudinary.com/dkznczrj0/image/upload/v1733704772/_MG_8206_tv3qin.jpg" alt="">
+                    <img class="h-auto max-w-full rounded-lg" src="https://res.cloudinary.com/dkznczrj0/image/upload/v1733704772/_MG_8206_tv3qin.jpg" alt="" @click="openModal($event.target.src)">
                 </div>
                 <div>
-                    <img class="h-auto max-w-full rounded-lg" src="https://res.cloudinary.com/dkznczrj0/image/upload/v1734363767/DSC00374_esme4j.jpg" alt="">
-                </div>
-            </div>
-            <div class="grid gap-4">
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="https://res.cloudinary.com/dkznczrj0/image/upload/v1734363314/_MG_9430_lcteaz.jpg" alt="">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="https://res.cloudinary.com/dkznczrj0/image/upload/v1733704776/_MG_9121_rlj0zf.jpg" alt="">
+                    <img class="h-auto max-w-full rounded-lg" src="https://res.cloudinary.com/dkznczrj0/image/upload/v1734363767/DSC00374_esme4j.jpg" alt="" @click="openModal($event.target.src)">
                 </div>
             </div>
             <div class="grid gap-4">
                 <div>
-                    <img class="h-auto max-w-full rounded-lg" src="https://res.cloudinary.com/dkznczrj0/image/upload/v1733780751/_MG_0884_cropped_fb9zep.jpg" alt="">
+                    <img class="h-auto max-w-full rounded-lg" src="https://res.cloudinary.com/dkznczrj0/image/upload/v1734363314/_MG_9430_lcteaz.jpg" alt="" @click="openModal($event.target.src)">
                 </div>
                 <div>
-                    <img class="h-auto max-w-full rounded-lg" src="https://res.cloudinary.com/dkznczrj0/image/upload/v1734363821/DSC01004_l2iotu.jpg" alt="">
+                    <img class="h-auto max-w-full rounded-lg" src="https://res.cloudinary.com/dkznczrj0/image/upload/v1733704776/_MG_9121_rlj0zf.jpg" alt="" @click="openModal($event.target.src)">
+                </div>
+            </div>
+            <div class="grid gap-4">
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="https://res.cloudinary.com/dkznczrj0/image/upload/v1733763915/_MG_8718_au610y.jpg" alt="" @click="openModal($event.target.src)">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="https://res.cloudinary.com/dkznczrj0/image/upload/v1734363821/DSC01004_l2iotu.jpg" alt="" @click="openModal($event.target.src)">
                     
                 </div>
             </div>
             <div class="grid gap-4">
                 <div>
-                    <img class="h-auto max-w-full rounded-lg" src="https://res.cloudinary.com/dkznczrj0/image/upload/v1734363356/_MG_9558_whoncd.jpg" alt="">
+                    <img class="h-auto max-w-full rounded-lg" src="https://res.cloudinary.com/dkznczrj0/image/upload/v1735177793/DSC01568_ud8fer.jpg" alt="" @click="openModal($event.target.src)">
                 </div>
                 <div>
-                    <img class="h-auto max-w-full rounded-lg" src="https://res.cloudinary.com/dkznczrj0/image/upload/v1733763915/_MG_8718_au610y.jpg" alt="">
+                    <img class="h-auto max-w-full rounded-lg" src="https://res.cloudinary.com/dkznczrj0/image/upload/v1733780751/_MG_0884_cropped_fb9zep.jpg" alt="" @click="openModal($event.target.src)">
                 </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div 
+            v-if="isModalOpen" 
+            id="imageModal" 
+            class="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center"
+            @click="closeModal"
+        >
+            <div class="relative">
+                <img 
+                    id="modalImage" 
+                    :src="modalImage" 
+                    class="max-w-full max-h-screen my-12"
+                >
             </div>
         </div>
 
@@ -59,22 +75,44 @@ import { RouterLink } from 'vue-router'
         <h3 class="mb-12">a huge part of my inspiration comes from media. <br>here's what i'm into right now. you can check out some of my reviews <RouterLink to="/" class="underline underline-offset-4 hover:text-pink transition-all duration-300 ease-in-out">here &#x2197;</RouterLink></h3>
         <ContentScroller :images="images" class="mb-48"/>
 
+        <h2 class="text-left text-3xl font-bold mt-12 mb-6">year in review (in progress)</h2>
+        <h3 class="text-right mb-12">a big part of my year is tracking the things i'm into. <br> here i'll track what i'm up to creatively, what i'm consuming, & more.</h3>
 
-        <h2 class="text-3xl font-bold mt-12 mb-6">mft (my favorite things)</h2>
-        <h3 class="text-right mb-12">this section is <span class="line-through">inspired by</span> stolen from <a href="https://www.iamrob.in/bookmarks" target="_blank" class="underline underline-offset-4 hover:text-pink transition-all duration-300 ease-in-out">iamrobin's bookmarks &#x2197;</a>. <br> here are some of my favorite websites, tools, articles, apps, and more.</h3>
+        <div class="grid grid-cols-4 gap-6 mb-48">
+            <div class="border border-2 rounded-lg py-24 text-center border-black hover:bg-blue transition-all duration-500 ease-in-out">january</div>
+            <div class="border border-2 rounded-lg py-24 text-center border-black text-black text-opacity-25 border-opacity-25">february</div>
+            <div class="border border-2 rounded-lg py-24 text-center border-black text-black text-opacity-25 border-opacity-25">march</div>
+            <div class="border border-2 rounded-lg py-24 text-center border-black text-black text-opacity-25 border-opacity-25">april</div>
+            <div class="border border-2 rounded-lg py-24 text-center border-black text-black text-opacity-25 border-opacity-25">may</div>
+            <div class="border border-2 rounded-lg py-24 text-center border-black text-black text-opacity-25 border-opacity-25">june</div>
+            <div class="border border-2 rounded-lg py-24 text-center border-black text-black text-opacity-25 border-opacity-25">july</div>
+            <div class="border border-2 rounded-lg py-24 text-center border-black text-black text-opacity-25 border-opacity-25">august</div>
+            <div class="border border-2 rounded-lg py-24 text-center border-black text-black text-opacity-25 border-opacity-25">september</div>
+            <div class="border border-2 rounded-lg py-24 text-center border-black text-black text-opacity-25 border-opacity-25">october</div>
+            <div class="border border-2 rounded-lg py-24 text-center border-black text-black text-opacity-25 border-opacity-25">november</div>
+            <div class="border border-2 rounded-lg py-24 text-center border-black text-black text-opacity-25 border-opacity-25">december</div>
+        </div>
 
+
+        <h2 class="text-right text-3xl font-bold mt-12 mb-6">mft (my favorite things)</h2>
+        <h3 class="mb-12 mb-12">this section is <span class="line-through">inspired by</span> stolen from <a href="https://www.iamrob.in/bookmarks" target="_blank" class="underline underline-offset-4 hover:text-pink transition-all duration-300 ease-in-out">iamrobin's bookmarks &#x2197;</a>. <br> here are some of my favorite websites, tools, articles, apps, and more.</h3>
+        <MFT  class="mb-12"/>
     </main>
 </template>
 
 <script>
 import ContentScroller from "@/components/ContentScroller.vue";
+import MFT from "@/components/MFT.vue";
 
 export default {
 	components: {
 		ContentScroller,
+        MFT,
 	},
     data() {
         return {
+            isModalOpen: false,
+            modalImage: '',
             images: [
                 {
                     src: "https://res.cloudinary.com/dkznczrj0/image/upload/v1734103815/hxh_lzqwpq.jpg",
@@ -107,8 +145,8 @@ export default {
                     alt: "image_6",
                 },
                 {
-                    src: "https://res.cloudinary.com/dkznczrj0/image/upload/v1734103815/ror2_jwpqbf.webp",
-                    link: "https://store.steampowered.com/app/632360/Risk_of_Rain_2/",
+                    src: "https://res.cloudinary.com/dkznczrj0/image/upload/v1735177288/iamyourbeast_o1icrw.jpg",
+                    link: "https://store.steampowered.com/app/1876590/I_Am_Your_Beast/",
                     alt: "image_7",
                 },
                 {
@@ -119,5 +157,16 @@ export default {
             ],
         };
     },
+    methods: {
+        openModal(imageSrc) {
+            this.modalImage = imageSrc;
+            this.isModalOpen = true;
+        },
+        closeModal(event) {
+            if (event.target === event.currentTarget) {
+                this.isModalOpen = false;
+            }
+        }
+    }
 };
 </script>

@@ -11,6 +11,9 @@ import NonProjectPhotos from '@/views/Unofficially/PhotographyViews/NonProjectPh
 import UnofficiallyView from '@/views/UnofficiallyView.vue'
 import Eighteen6000 from '@/views/Unofficially/PhotographyViews/Eighteen6000.vue'
 import NotFound from '@/views/NotFound.vue'
+import Reservoir from '@/views/Officially/Reservoir.vue'
+import NihonGO from '@/views/Officially/nihonGO.vue'
+import JASIAH from '@/views/Officially/JASIAH.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -74,6 +77,18 @@ const router = createRouter({
         path: '/:pathMatch(.*)*',
         component: NotFound
     },
+    {
+        path: '/Reservoir',
+        component: Reservoir
+    },
+    {
+        path: '/nihonGO',
+        component: NihonGO
+    },
+    {
+        path: '/JASIAH',
+        component: JASIAH
+    }
   ],
 })
 

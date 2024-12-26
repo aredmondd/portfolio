@@ -19,27 +19,33 @@ import { RouterLink } from 'vue-router'
         <h2 class="text-center text-5xl font-bold">PROJECTS</h2>
         <p class="text-black text-opacity-50 text-sm text-center mt-3">(click on one to learn more)</p>
         <div class="grid grid-cols-3 place-items-center gap-24 m-24 mb-48">
-            <div class="flex flex-col h-full">
-                <div class="flex items-center justify-center h-full rounded-lg hover:bg-[#0A1826] transition-all duration-500 ease-in-out">
-                    <img src="../assets/images/RESERVOIR.png">
+            <RouterLink to="/Reservoir">
+                <div class="flex flex-col h-full">
+                    <div class="flex items-center justify-center h-full rounded-lg hover:bg-[#0A1826] transition-all duration-500 ease-in-out">
+                        <img src="../assets/images/RESERVOIR.png">
+                    </div>
+                    <p class="text-lg text-center mt-6">A social platform for media tracking</p>
+                    <p class="text-md text-black text-opacity-50 text-sm text-center mt-1">Senior Project - Fall 2024</p>
                 </div>
-                <p class="text-lg text-center mt-6">A social platform for media tracking</p>
-                <p class="text-md text-black text-opacity-50 text-sm text-center mt-1">Senior Project - Fall 2024</p>
-            </div>
-            <div class="flex flex-col h-full">
-                <div class="flex items-center justify-center h-full rounded-lg hover:bg-[#f1cd9d] transition-all duration-500 ease-in-out">
-                    <img src="../assets/images/NIHONGO.png">
+            </RouterLink>
+            <RouterLink to="/nihonGO">
+                <div class="flex flex-col h-full">
+                    <div class="flex items-center justify-center h-full rounded-lg hover:bg-[#f1cd9d] transition-all duration-500 ease-in-out">
+                        <img src="../assets/images/NIHONGO.png">
+                    </div>
+                    <p class="text-center mt-6">A language-learning app focused on Japanese</p>
+                    <p class="text-black text-opacity-50 text-sm text-center mt-1">Software Engineering - Fall 2024</p>
                 </div>
-                <p class="text-center mt-6">A language-learning app focused on Japanese</p>
-                <p class="text-black text-opacity-50 text-sm text-center mt-1">Software Engineering - Fall 2024</p>
-            </div>
-            <div class="flex flex-col h-full">
-                <div class="flex items-center justify-center h-full rounded-lg hover:bg-[#ffffff] transition-all duration-500 ease-in-out hover:invert">
-                    <img src="../assets/images/JASIAH.png">
+            </RouterLink>
+            <RouterLink to="/JASIAH">
+                <div class="flex flex-col h-full">
+                    <div class="flex items-center justify-center h-full rounded-lg hover:bg-[#ffffff] transition-all duration-500 ease-in-out hover:invert">
+                        <img src="../assets/images/JASIAH.png">
+                    </div>
+                    <p class="text-center mt-6">An automated inventory management script</p>
+                    <p class="text-black text-opacity-50 text-sm text-center mt-1">Alter Ego Running - Summer 2024</p>
                 </div>
-                <p class="text-center mt-6">An automated inventory management script</p>
-                <p class="text-black text-opacity-50 text-sm text-center mt-1">Alter Ego Running - Summer 2024</p>
-            </div>
+            </RouterLink>
         </div>
 
         <!-- PROFILE -->

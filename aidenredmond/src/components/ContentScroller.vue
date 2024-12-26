@@ -1,7 +1,7 @@
 <template>
     <div class="flex-grow flex items-center">
         <div class="w-full inline-flex flex-nowrap overflow-x-hidden [mask-image:_linear-gradient(to_right,transparent_0,white,black,transparent_100%)] group">
-            <ul class="flex animate-loop-scroll group-hover:paused">
+            <ul class="flex animate-loop-scroll">
                 <div v-for="(image, index) in images" class="w-64 mr-8 h-full" :key="index">
                     <a v-bind:href="image.link" target="_blank">
                         <img
@@ -13,7 +13,7 @@
                     </a>
                 </div>
             </ul>
-            <ul class="flex animate-loop-scroll group-hover:paused" aria-hidden="true">
+            <ul class="flex animate-loop-scroll" aria-hidden="true">
                 <div v-for="(image, index) in images" class="w-64 mr-8 h-full" :key="index">
                     <a v-bind:href="image.link" target="_blank">
                         <img
