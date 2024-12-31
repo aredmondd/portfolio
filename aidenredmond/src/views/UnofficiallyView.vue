@@ -125,9 +125,14 @@ export default {
                     alt: "image_2",
                 },
                 {
-                    src: "https://res.cloudinary.com/dkznczrj0/image/upload/v1734103815/ballionaire_kg3zec.avif",
-                    link: "https://store.steampowered.com/app/2667120/Ballionaire/",
+                    src: "https://res.cloudinary.com/dkznczrj0/image/upload/v1735680633/library_600x900_2x_r0ngjw.jpg",
+                    link: "https://store.steampowered.com/app/620/Portal_2/",
                     alt: "image_3",
+                },
+                {
+                    src: "https://res.cloudinary.com/dkznczrj0/image/upload/v1735680751/9f1dd83ac3b7bcbf034240fad7ff7d4d_luvjcx.jpg",
+                    link: "https://en.wikipedia.org/wiki/Mega_Man_2",
+                    alt: "image_8",
                 },
                 {
                     src: "https://res.cloudinary.com/dkznczrj0/image/upload/v1734103815/csm_mjjaun.jpg",
@@ -138,16 +143,6 @@ export default {
                     src: "https://res.cloudinary.com/dkznczrj0/image/upload/v1734103815/gachiakuta_euaois.webp",
                     link: "https://en.wikipedia.org/wiki/Gachiakuta",
                     alt: "image_5",
-                },
-                {
-                    src: "https://res.cloudinary.com/dkznczrj0/image/upload/v1734103815/nine-sols_uxho56.avif",
-                    link: "https://store.steampowered.com/app/1809540/Nine_Sols/",
-                    alt: "image_6",
-                },
-                {
-                    src: "https://res.cloudinary.com/dkznczrj0/image/upload/v1735177288/iamyourbeast_o1icrw.jpg",
-                    link: "https://store.steampowered.com/app/1876590/I_Am_Your_Beast/",
-                    alt: "image_7",
                 },
                 {
                     src: "https://res.cloudinary.com/dkznczrj0/image/upload/v1734103815/tca_xu5cwg.jpg",

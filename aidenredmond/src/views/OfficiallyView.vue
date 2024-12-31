@@ -106,7 +106,7 @@ import { RouterLink } from 'vue-router'
         <!-- SKILLS -->
         <div class="flex justify-between mb-48 mx-24">
             <h2 class="text-5xl font-bold underline underline-offset-8 decoration-[6px]">SKILLS</h2>
-            <div class="flex flex-col space-y-6 mt-2">
+            <div class="flex flex-col absolute left-1/2 space-y-6 mt-2">
                 <div class="flex">
                     <h2 class="text-3xl font-bold mr-6">Proficient:</h2>
                     <div class="flex space-x-4">

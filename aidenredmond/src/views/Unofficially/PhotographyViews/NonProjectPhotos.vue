@@ -36,11 +36,8 @@ export default {
             modalImage: '',
             images: [
                 { src: "https://res.cloudinary.com/dkznczrj0/image/upload/v1733704780/_MG_9582_p71xdd.jpg", alt: "up close christopher" },
-                { src: "https://res.cloudinary.com/dkznczrj0/image/upload/v1733704761/_MG_7205_sfb7h3.jpg", alt: "Alarm clock" },
+                { src: "https://res.cloudinary.com/dkznczrj0/image/upload/v1733704761/_MG_7205_sfb7h3.jpg", alt: "Alarm clock" }, 
                 { src: "https://res.cloudinary.com/dkznczrj0/image/upload/v1733704768/_MG_7663_posvvp.jpg", alt: "luke + aiden" },
-                { src: "https://res.cloudinary.com/dkznczrj0/image/upload/v1733704780/_MG_9582_p71xdd.jpg", alt: "up close christopher"},
-                { src: "https://res.cloudinary.com/dkznczrj0/image/upload/v1733704761/_MG_7205_sfb7h3.jpg", alt: "Alarm clock"},
-                { src: "https://res.cloudinary.com/dkznczrj0/image/upload/v1733704768/_MG_7663_posvvp.jpg", alt: "luke + aiden"},
                 { src: "https://res.cloudinary.com/dkznczrj0/image/upload/v1733704783/IMG_7068_euhvzr.jpg", alt: "blurry anthony"},
                 { src: "https://res.cloudinary.com/dkznczrj0/image/upload/v1733704758/_MG_0624_cksxm9.jpg", alt: "aiden with a camera in GA"},
                 { src: "https://res.cloudinary.com/dkznczrj0/image/upload/v1733704781/_MG_9638_iulkhr.jpg", alt: "beyblades"},
