@@ -3,7 +3,7 @@ import { RouterLink } from 'vue-router'
 </script>
 
 <template>
-    <main class="flex flex-col flex-1">
+    <main class="flex flex-col flex-1 sm:bg-black">
         <h1 class="text-center text-4xl font-bold mt-12">Officially, Aiden Redmond</h1>
         <div class="flex flex-col items-center justify-start my-48">
             <div class="flex flex-col">

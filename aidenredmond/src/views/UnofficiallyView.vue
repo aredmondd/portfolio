@@ -4,22 +4,22 @@ import { RouterLink } from 'vue-router'
 
 <template>
     <main class="flex flex-col flex-1">
-        <h1 class="text-center text-4xl font-bold mt-12">unofficially, aiden redmond</h1>
+        <h1 class="text-center text-4xl font-bold mt-12 sm:px-6">unofficially, aiden redmond</h1>
         <div class="flex flex-col items-center justify-start my-48">
             <div class="flex flex-col">
                 <p>
-                    unofficial. he <br>
+                    "unofficial. he <br>
                     lays bare which he loves for they <br>
-                    are what make him, him.
+                    are what make him, him."
                 </p>
             </div>
         </div>
 
-        <h2 class="text-3xl font-bold mt-12 mb-6">photography</h2>
-        <h3 class="text-right mb-12">when i'm not working, running, or consuming media - i'm taking photos. <br> here are some of my favorites, but can you check out more <RouterLink to="/photography" class="underline underline-offset-4 hover:text-pink transition-all duration-300 ease-in-out">here &#x2197;</RouterLink></h3>
+        <h2 class="text-3xl font-bold mt-12 mb-6 sm:text-center">photography  📸</h2>
+        <h3 class="text-right mb-12 sm:text-sm sm:text-center">when i'm not working or running - i'm taking photos. <br> here are my favorites, but can you check out more <RouterLink to="/photography" class="underline underline-offset-4 hover:text-pink transition-all duration-300 ease-in-out">here &#x2197;</RouterLink></h3>
 
 
-        <div class="grid grid-cols-4 gap-4 mb-48">
+        <div class="grid grid-cols-4 gap-4 mb-48 sm:grid-cols-2">
             <div class="grid gap-4">
                 <div>
                     <img class="h-auto max-w-full rounded-lg" src="https://res.cloudinary.com/dkznczrj0/image/upload/v1733704772/_MG_8206_tv3qin.jpg" alt="" @click="openModal($event.target.src)">
@@ -71,15 +71,15 @@ import { RouterLink } from 'vue-router'
             </div>
         </div>
 
-        <h2 class="text-right text-3xl font-bold mt-12 mb-6">what i'm loving</h2>
-        <h3 class="mb-12">a huge part of my inspiration comes from media. <br>here's what i'm into right now. you can check out some of my reviews <RouterLink to="/" class="underline underline-offset-4 hover:text-pink transition-all duration-300 ease-in-out">here &#x2197;</RouterLink></h3>
+        <h2 class="text-right text-3xl font-bold mt-12 mb-6 sm:text-center">what i'm loving 💚</h2>
+        <h3 class="mb-12 sm:text-sm sm:text-center">a huge part of my inspiration comes from media. <br>here's what i'm into right now.</h3>
         <ContentScroller :images="images" class="mb-48"/>
 
-        <h2 class="text-left text-3xl font-bold mt-12 mb-6">year in review (in progress)</h2>
-        <h3 class="text-right mb-12">a big part of my year is tracking the things i'm into. <br> here i'll track what i'm up to creatively, what i'm consuming, & more.</h3>
+        <h2 class="text-left text-3xl font-bold mt-12 mb-6 sm:text-center">year in review 📆</h2>
+        <h3 class="text-right mb-12 sm:text-sm sm:text-center">i love tracking what i'm into.<br> what i'm consuming, making, doing, & more. it'll live here.</h3>
 
-        <div class="grid grid-cols-4 gap-6 mb-48">
-            <div class="border border-2 rounded-lg py-24 text-center border-black hover:bg-blue transition-all duration-500 ease-in-out">january</div>
+        <div class="grid grid-cols-4 gap-6 mb-48 sm:grid-cols-2">
+            <div class="border border-2 rounded-lg py-24 text-center border-black hover:bg-blue transition-all duration-500 ease-in-out">january <br>(coming soon)</div>
             <div class="border border-2 rounded-lg py-24 text-center border-black text-black text-opacity-25 border-opacity-25">february</div>
             <div class="border border-2 rounded-lg py-24 text-center border-black text-black text-opacity-25 border-opacity-25">march</div>
             <div class="border border-2 rounded-lg py-24 text-center border-black text-black text-opacity-25 border-opacity-25">april</div>
@@ -94,8 +94,8 @@ import { RouterLink } from 'vue-router'
         </div>
 
 
-        <h2 class="text-right text-3xl font-bold mt-12 mb-6">mft (my favorite things)</h2>
-        <h3 class="mb-12 mb-12">this section is <span class="line-through">inspired by</span> stolen from <a href="https://www.iamrob.in/bookmarks" target="_blank" class="underline underline-offset-4 hover:text-pink transition-all duration-300 ease-in-out">iamrobin's bookmarks &#x2197;</a>. <br> here are some of my favorite websites, tools, articles, apps, and more.</h3>
+        <h2 class="text-right text-3xl font-bold mt-12 mb-6 sm:text-center">the vault 🏛️</h2>
+        <h3 class="mb-12 mb-12 sm:text-sm sm:text-center">this section is <span class="line-through">stolen from</span> inspired by <br class="hidden sm:block"> <a href="https://www.iamrob.in/bookmarks" target="_blank" class="underline underline-offset-4 hover:text-pink transition-all duration-300 ease-in-out">iamrobin's bookmarks &#x2197;</a>. <br> here are some of my favorite websites, tools, & more.</h3>
         <MFT  class="mb-12"/>
     </main>
 </template>

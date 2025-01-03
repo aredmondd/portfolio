@@ -4,8 +4,8 @@ import { RouterLink } from 'vue-router';
 
 <template>
     <nav class="flex justify-between items-center">
-        <RouterLink to="/officially" class="hover:text-pink">aiden (officially)</RouterLink>
-        <RouterLink to="/"><img src="/src/assets/images/logo_regular.png" alt="" width="80"></RouterLink>
-        <RouterLink to="/unofficially" class="hover:text-pink">aiden (unofficially)</RouterLink>
+        <RouterLink to="/officially" class="hover:text-pink sm:text-xs">aiden (officially)</RouterLink>
+        <RouterLink to="/"><img src="/src/assets/images/logo_regular.png" alt="" class="w-20"></RouterLink>
+        <RouterLink to="/unofficially" class="hover:text-pink sm:text-xs">aiden (unofficially)</RouterLink>
     </nav>
 </template>
