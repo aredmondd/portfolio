@@ -79,18 +79,18 @@ import { RouterLink } from 'vue-router'
         <h3 class="text-right mb-12 sm:text-sm sm:text-center">i love tracking what i'm into.<br> what i'm consuming, making, doing, & more. it'll live here.</h3>
 
         <div class="grid grid-cols-4 gap-6 mb-48 sm:grid-cols-2">
-            <div class="border border-2 rounded-lg py-24 text-center border-black hover:bg-blue transition-all duration-500 ease-in-out">january <br>(coming soon)</div>
-            <div class="border border-2 rounded-lg py-24 text-center border-black text-black text-opacity-25 border-opacity-25">february</div>
-            <div class="border border-2 rounded-lg py-24 text-center border-black text-black text-opacity-25 border-opacity-25">march</div>
-            <div class="border border-2 rounded-lg py-24 text-center border-black text-black text-opacity-25 border-opacity-25">april</div>
-            <div class="border border-2 rounded-lg py-24 text-center border-black text-black text-opacity-25 border-opacity-25">may</div>
-            <div class="border border-2 rounded-lg py-24 text-center border-black text-black text-opacity-25 border-opacity-25">june</div>
-            <div class="border border-2 rounded-lg py-24 text-center border-black text-black text-opacity-25 border-opacity-25">july</div>
-            <div class="border border-2 rounded-lg py-24 text-center border-black text-black text-opacity-25 border-opacity-25">august</div>
-            <div class="border border-2 rounded-lg py-24 text-center border-black text-black text-opacity-25 border-opacity-25">september</div>
-            <div class="border border-2 rounded-lg py-24 text-center border-black text-black text-opacity-25 border-opacity-25">october</div>
-            <div class="border border-2 rounded-lg py-24 text-center border-black text-black text-opacity-25 border-opacity-25">november</div>
-            <div class="border border-2 rounded-lg py-24 text-center border-black text-black text-opacity-25 border-opacity-25">december</div>
+            <div class="border border-2 rounded-lg py-24 sm:py-12 text-center border-black hover:bg-blue transition-all duration-500 ease-in-out">january</div>
+            <div class="border border-2 rounded-lg py-24 sm:py-12 text-center border-black text-black text-opacity-25 border-opacity-25">february</div>
+            <div class="border border-2 rounded-lg py-24 sm:py-12 text-center border-black text-black text-opacity-25 border-opacity-25">march</div>
+            <div class="border border-2 rounded-lg py-24 sm:py-12 text-center border-black text-black text-opacity-25 border-opacity-25">april</div>
+            <div class="border border-2 rounded-lg py-24 sm:py-12 text-center border-black text-black text-opacity-25 border-opacity-25">may</div>
+            <div class="border border-2 rounded-lg py-24 sm:py-12 text-center border-black text-black text-opacity-25 border-opacity-25">june</div>
+            <div class="border border-2 rounded-lg py-24 sm:py-12 text-center border-black text-black text-opacity-25 border-opacity-25">july</div>
+            <div class="border border-2 rounded-lg py-24 sm:py-12 text-center border-black text-black text-opacity-25 border-opacity-25">august</div>
+            <div class="border border-2 rounded-lg py-24 sm:py-12 text-center border-black text-black text-opacity-25 border-opacity-25">september</div>
+            <div class="border border-2 rounded-lg py-24 sm:py-12 text-center border-black text-black text-opacity-25 border-opacity-25">october</div>
+            <div class="border border-2 rounded-lg py-24 sm:py-12 text-center border-black text-black text-opacity-25 border-opacity-25">november</div>
+            <div class="border border-2 rounded-lg py-24 sm:py-12 text-center border-black text-black text-opacity-25 border-opacity-25">december</div>
         </div>
 
 
@@ -156,10 +156,12 @@ export default {
         openModal(imageSrc) {
             this.modalImage = imageSrc;
             this.isModalOpen = true;
+            document.body.style.overflow = 'hidden'; // Disable scrolling
         },
         closeModal(event) {
             if (event.target === event.currentTarget) {
                 this.isModalOpen = false;
+                document.body.style.overflow = ''; // Restore scrolling
             }
         }
     }

@@ -3,8 +3,8 @@ import { RouterLink } from 'vue-router'
 </script>
 
 <template>
-    <div class="flex flex-1 ml-24 mt-24 space-x-32">
-        <div>
+    <div class="flex flex-1 ml-24 mt-24 space-x-32 sm:ml-0 sm:flex-col sm:space-x-0">
+        <div class="mb-12">
             <h1 class="font-bold mb-6">digital photography (8/20/24 - 12/8/24)</h1>
             <div class="flex flex-col justify-between">
                 <RouterLink to="/photography/aperture-and-shutter-speed" class="hover:text-pink">aperture & shutter speed</RouterLink>

@@ -1,5 +1,7 @@
 <template>
-	<div class="flex flex-1 justify-center mt-8 relative">
+	<div
+		class="flex flex-1 justify-center mt-8 relative md:items-center md:mt-0"
+	>
 		<div class="relative overflow-hidden mx-auto w-2/3">
 			<div
 				ref="track"

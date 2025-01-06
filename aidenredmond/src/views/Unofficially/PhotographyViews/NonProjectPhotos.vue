@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-1">
-        <div class="flex-1 columns-3 gap-4 space-y-4 my-6">
+        <div class="flex-1 columns-3 gap-4 space-y-4 my-6 sm:columns-2">
             <img 
                 v-for="(image, index) in images" 
                 :key="index" 
