@@ -8,11 +8,24 @@ import { RouterLink } from 'vue-router'
         <div class="flex flex-col items-center justify-start my-48">
             <div class="flex flex-col">
                 <p>
-                    "Official. He will <br>
-                    show his strengths and experience <br>
-                    to earn more of it."
+                    <span class="opacity-0 duration-700 transform opacity-0 transition-all translate-y-12 ease-in-out delay-[0ms]" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100"}'>"Official. </span> 
+                    <span class="opacity-0 duration-700 transform opacity-0 transition-all translate-y-12 ease-in-out delay-[500ms]" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100"}'>He</span> <br>
+                    <span class="opacity-0 duration-700 transform opacity-0 transition-all translate-y-12 ease-in-out delay-[750ms]" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100"}'>will </span> 
+                    <span class="opacity-0 duration-700 transform opacity-0 transition-all translate-y-12 ease-in-out delay-[1000ms]" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100"}'>show </span> 
+                    <span class="opacity-0 duration-700 transform opacity-0 transition-all translate-y-12 ease-in-out delay-[1250ms]" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100"}'>his </span> 
+                    <span class="opacity-0 duration-700 transform opacity-0 transition-all translate-y-12 ease-in-out delay-[1500ms]" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100"}'>strengths </span>
+                    <span class="opacity-0 duration-700 transform opacity-0 transition-all translate-y-12 ease-in-out delay-[1750ms]" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100"}'>and </span> 
+                    <span class="opacity-0 duration-700 transform opacity-0 transition-all translate-y-12 ease-in-out delay-[2000ms]" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100"}'>experience </span> <br>
+                    <span class="opacity-0 duration-700 transform opacity-0 transition-all translate-y-12 ease-in-out delay-[2500ms]" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100"}'>to </span> 
+                    <span class="opacity-0 duration-700 transform opacity-0 transition-all translate-y-12 ease-in-out delay-[2750ms]" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100"}'>earn </span>
+                    <span class="opacity-0 duration-700 transform opacity-0 transition-all translate-y-12 ease-in-out delay-[3000ms]" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100"}'>more </span> 
+                    <span class="opacity-0 duration-700 transform opacity-0 transition-all translate-y-12 ease-in-out delay-[3250ms]" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100"}'>of </span> 
+                    <span class="opacity-0 duration-700 transform opacity-0 transition-all translate-y-12 ease-in-out delay-[3500ms]" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100"}'>it."</span>
                 </p>
             </div>
+
+            <a href="/officially" class="underline mt-12 text-black text-opacity-25 opacity-0 duration-700 transform opacity-0 transition-all translate-y-12 ease-in-out delay-[4250ms]" data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100"}'>replay ↺</a>
+
         </div>
 
         <!-- PROJECTS SECTION -->

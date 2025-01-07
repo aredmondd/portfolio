@@ -28,3 +28,36 @@
         <p class="hover:text-pink transition-all duration-250 ease-in-out">.</p>
     </footer>
 </html>
+
+<script>
+    // replace all animation with animations once page is loaded or link is clicked
+    function handleAnimations() {
+        setTimeout(() => {
+            const replacers = document.querySelectorAll('[data-replace]');
+            replacers.forEach(replacer => {
+                try {
+                    const replaceClasses = JSON.parse(replacer.dataset.replace.replace(/'/g, '"'));
+                    for (const [oldClass, newClass] of Object.entries(replaceClasses)) {
+                        replacer.classList.remove(oldClass);
+                        replacer.classList.add(newClass);
+                    }
+                } catch (error) {
+                    console.error("Error parsing data-replace:", error);
+                }
+            });
+        }, 1);
+    }
+
+    // Trigger on page load
+    document.addEventListener("DOMContentLoaded", () => {
+        handleAnimations();
+    });
+
+    // Trigger on link click
+    document.addEventListener("click", (event) => {
+        const link = event.target.closest("a");
+        if (link && link.href) {
+            handleAnimations();
+        }
+    });
+</script>
