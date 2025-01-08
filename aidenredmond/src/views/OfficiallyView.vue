@@ -88,7 +88,7 @@ import { RouterLink } from 'vue-router'
                     </div>
                 </div>
             </div>
-            <img src="../assets/images/red.jpg" alt="" class="h-[350px] rounded-lg block sm:hidden right-item">
+            <img src="../assets/images/red-profile.jpeg" alt="" class="h-[350px] rounded-lg block sm:hidden right-item">
         </div>
 
 
