@@ -178,34 +178,34 @@ export default {
             }
         },
         addScrollAnimations() {
-        const months = document.querySelectorAll('.month-item');
-        const photos = document.querySelectorAll('img.h-auto');
+            const months = document.querySelectorAll('.month-item');
+            const photos = document.querySelectorAll('img.h-auto');
 
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('opacity-100', 'translate-y-0');
-                        entry.target.classList.remove('opacity-0', 'translate-y-10');
-                        observer.unobserve(entry.target);
-                    }
-                });
-            },
-            {
-                threshold: 0.5,
-            }
-        );
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('opacity-100', 'translate-y-0');
+                            entry.target.classList.remove('opacity-0', 'translate-y-10');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                },
+                {
+                    threshold: 0.5,
+                }
+            );
 
-        months.forEach((month) => {
-            month.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-500', 'ease-out'); // Initial state
-            observer.observe(month);
-        });
+            months.forEach((month) => {
+                month.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-500', 'ease-out'); // Initial state
+                observer.observe(month);
+            });
 
-        photos.forEach((photo) => {
-            photo.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-500', 'ease-out'); // Initial state
-            observer.observe(photo);
-        });
-    },
+            photos.forEach((photo) => {
+                photo.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-500', 'ease-out'); // Initial state
+                observer.observe(photo);
+            });
+        },
     }
 };
 </script>

@@ -32,7 +32,7 @@ import { RouterLink } from 'vue-router'
         <h2 class="text-center text-5xl font-bold">PROJECTS</h2>
         <p class="text-black text-opacity-50 text-sm text-center mt-3">(click on one to learn more)</p>
         <div class="grid grid-cols-3 place-items-center gap-24 m-24 mb-64 sm:grid-cols-1 sm:mx-6">
-            <RouterLink to="/Reservoir">
+            <RouterLink to="/Reservoir" class="project">
                 <div class="flex flex-col h-full">
                     <div class="flex items-center justify-center h-full rounded-lg hover:bg-[#0A1826] transition-all duration-500 ease-in-out">
                         <img src="../assets/images/RESERVOIR.png">
@@ -41,7 +41,7 @@ import { RouterLink } from 'vue-router'
                     <p class="text-md text-black text-opacity-50 text-sm text-center mt-1">Senior Project - Fall 2024</p>
                 </div>
             </RouterLink>
-            <RouterLink to="/nihonGO">
+            <RouterLink to="/nihonGO" class="project">
                 <div class="flex flex-col h-full">
                     <div class="flex items-center justify-center h-full rounded-lg hover:bg-[#f1cd9d] transition-all duration-500 ease-in-out">
                         <img src="../assets/images/NIHONGO.png">
@@ -50,7 +50,7 @@ import { RouterLink } from 'vue-router'
                     <p class="text-black text-opacity-50 text-sm text-center mt-1">Software Engineering - Fall 2024</p>
                 </div>
             </RouterLink>
-            <RouterLink to="/JASIAH">
+            <RouterLink to="/JASIAH" class="project">
                 <div class="flex flex-col h-full">
                     <div class="flex items-center justify-center h-full rounded-lg hover:bg-[#ffffff] transition-all duration-500 ease-in-out hover:invert">
                         <img src="../assets/images/JASIAH.png">
@@ -63,11 +63,13 @@ import { RouterLink } from 'vue-router'
 
         <!-- PROFILE -->
         <div class="flex justify-between items-start mb-48 mx-24 sm:mx-1">
-            <div class="flex flex-col">
+            <div class="flex flex-col left-item">
+                <!-- desktop -->
                 <div class="block sm:hidden">
                     <h2 class="text-left text-5xl font-bold">PROFILE</h2>
                     <p class="text-left text-black text-opacity-50 text-sm mt-3 mb-12">(who... is aiden redmond?)</p>
                 </div>
+                <!-- mobile -->
                 <div class="hidden sm:block">
                     <h2 class="text-center text-5xl font-bold">PROFILE</h2>
                     <p class="text-center text-black text-opacity-50 text-sm mt-3 mb-12">(who... is aiden redmond?)</p>
@@ -86,13 +88,13 @@ import { RouterLink } from 'vue-router'
                     </div>
                 </div>
             </div>
-            <img src="../assets/images/red.JPG" alt="" class="h-[350px] rounded-lg block sm:hidden">
+            <img src="../assets/images/red.JPG" alt="" class="h-[350px] rounded-lg block sm:hidden right-item">
         </div>
 
 
         <!-- EDUCATION -->
         <div class="flex justify-between items-start mb-48 mx-24 sm:mx-6">
-            <div class="flex flex-col">
+            <div class="flex flex-col left-item">
                 <div class="block sm:hidden mb-6">
                     <h2 class="text-left text-5xl font-bold sm:text-center">EDUCATION</h2>
                     <p class="text-left text-black text-opacity-50 text-sm mt-3 mb-6 sm:text-center">(what has aiden redmond learned?)</p>
@@ -112,13 +114,13 @@ import { RouterLink } from 'vue-router'
                     </div>
                 </div>
             </div>
-            <img src="https://res.cloudinary.com/dkznczrj0/image/upload/v1736189209/Untitled_hhxhcj.png" alt="" class="h-[350px] rounded-lg block sm:hidden">
+            <img src="https://res.cloudinary.com/dkznczrj0/image/upload/v1736189209/Untitled_hhxhcj.png" alt="" class="h-[350px] rounded-lg block sm:hidden right-item">
         </div>
 
 
         <!-- EXPERIENCE -->
         <div class="flex justify-between items-start mb-48 mx-24 sm:mx-6">
-            <div class="flex flex-col">
+            <div class="flex flex-col left-item">
                 <div class="block sm:hidden mb-6">
                     <h2 class="text-left text-5xl font-bold sm:text-center">EXPERIENCE</h2>
                     <p class="text-black text-opacity-50 text-sm text-left mt-3 mb-6 sm:text-center">(what has aiden redmond done?)</p>
@@ -149,7 +151,7 @@ import { RouterLink } from 'vue-router'
                         <div class="sm:hidden flex flex-col space-y-3 text-md text-black text-opacity-75 mt-2">
                             <p>• Redesigned the inventory tracking system using JS & Shopify increasing <br> efficiency by over 60%.</p>
                             <p>
-                                • Implemented a new helpdesk management system (Gorgias), organized <br>customer service workflows, and trained
+                                • Implemented a new helpdesk management system (<a target="_blank" class="underline" href="https://www.gorgias.com/">Gorgias</a>), organized <br>customer service workflows, and trained
                                 multiple staff members on <br>software usage for operational efficiency.
                             </p>
                             <p>• Designed a system to optimize product flow, label & identify items, and <br>streamline the process of receiving and updating new inventory.</p>
@@ -157,7 +159,7 @@ import { RouterLink } from 'vue-router'
                     </div>
                 </div>
             </div>
-            <img src="https://res.cloudinary.com/dkznczrj0/image/upload/v1736189209/Untitled-2_sm6aqm.png" alt="" class="h-[350px] rounded-lg block sm:hidden">
+            <img src="https://res.cloudinary.com/dkznczrj0/image/upload/v1736189209/Untitled-2_sm6aqm.png" alt="" class="h-[350px] rounded-lg block sm:hidden right-item">
         </div>
 
 
@@ -171,18 +173,18 @@ import { RouterLink } from 'vue-router'
                 <div class="flex flex-col space-y-6 mt-2">
                     <h2 class="text-3xl font-bold mr-6">Proficient:</h2>
                     <div class="flex space-x-4 sm:flex-col sm:space-y-4">
-                        <img src="../assets/images/html.png" alt="" class="h-10">
-                        <img src="../assets/images/css.png" alt="" class="h-10">
-                        <img src="../assets/images/js.png" alt="" class="h-10">
-                        <img src="../assets/images/laravel.png" alt="" class="h-10">
-                        <img src="../assets/images/tailwind.png" alt="" class="h-10">
-                        <img src="../assets/images/php.png" alt="" class="h-10">
+                        <a target="_blank" href="https://en.wikipedia.org/wiki/HTML"><img src="../assets/images/html.png" alt="" class="h-10 tech-stack-item"></a>
+                        <a target="_blank" href="https://en.wikipedia.org/wiki/CSS"><img src="../assets/images/css.png" alt="" class="h-10 tech-stack-item"></a>
+                        <a target="_blank" href="https://en.wikipedia.org/wiki/JavaScript"><img src="../assets/images/js.png" alt="" class="h-10 tech-stack-item"></a>
+                        <a target="_blank" href="https://laravel.com/"><img src="../assets/images/laravel.png" alt="" class="h-10 tech-stack-item"></a>
+                        <a target="_blank" href="https://tailwindcss.com/"><img src="../assets/images/tailwind.png" alt="" class="h-10 tech-stack-item"></a>
+                        <a target="_blank" href="https://www.php.net/"><img src="../assets/images/php.png" alt="" class="h-10 tech-stack-item"></a>
                     </div>
                     <h2 class="text-3xl font-bold mr-6">Familiar:</h2>
                     <div class="flex sm:flex-col space-x-4">
-                        <img src="../assets/images/vue.png" alt="" class="h-10">
-                        <img src="../assets/images/python.png" alt="" class="h-10">
-                        <img src="../assets/images/firebase.png" alt="" class="h-10">
+                        <a target="_blank" href="https://vuejs.org/"><img src="../assets/images/vue.png" alt="" class="h-10 tech-stack-item"></a>
+                        <a target="_blank" href="https://www.python.org/"><img src="../assets/images/python.png" alt="" class="h-10 tech-stack-item"></a>
+                        <a target="_blank" href="https://firebase.google.com/"><img src="../assets/images/firebase.png" alt="" class="h-10 tech-stack-item"></a>
                     </div>
                 </div>
             </div>
@@ -197,21 +199,77 @@ import { RouterLink } from 'vue-router'
             <div class="flex flex-col mt-2 mb-24">
                 <h2 class="text-center text-3xl font-bold mr-6 mb-3">Proficient</h2>
                 <div class="grid grid-cols-3 gap-6 mx-12 mb-12 place-items-center">
-                    <img src="../assets/images/html.png" alt="" class="h-10">
-                    <img src="../assets/images/css.png" alt="" class="h-10">
-                    <img src="../assets/images/js.png" alt="" class="h-10">
-                    <img src="../assets/images/laravel.png" alt="" class="h-10">
-                    <img src="../assets/images/tailwind.png" alt="" class="h-10">
-                    <img src="../assets/images/php.png" alt="" class="h-10">
+                    <a target="_blank" href="https://en.wikipedia.org/wiki/HTML"><img src="../assets/images/html.png" alt="" class="h-10"></a>
+                    <a target="_blank" href="https://en.wikipedia.org/wiki/CSS"><img src="../assets/images/css.png" alt="" class="h-10"></a>
+                    <a target="_blank" href="https://en.wikipedia.org/wiki/JavaScript"><img src="../assets/images/js.png" alt="" class="h-10"></a>
+                    <a target="_blank" href="https://laravel.com/"><img src="../assets/images/laravel.png" alt="" class="h-10"></a>
+                    <a target="_blank" href="https://tailwindcss.com/"><img src="../assets/images/tailwind.png" alt="" class="h-10"></a>
+                    <a target="_blank" href="https://www.php.net/"><img src="../assets/images/php.png" alt="" class="h-10"></a>
                 </div>
                 <h2 class="text-center text-3xl font-bold mr-6 mb-3">Familiar</h2>
                 <div class="grid grid-cols-3 gap-6 mx-12 place-items-center">
-                    <img src="../assets/images/vue.png" alt="" class="h-10">
-                    <img src="../assets/images/python.png" alt="" class="h-10">
-                    <img src="../assets/images/firebase.png" alt="" class="h-10">
+                    <a target="_blank" href="https://vuejs.org/"><img src="../assets/images/vue.png" alt="" class="h-10"></a>
+                    <a target="_blank" href="https://www.python.org/"><img src="../assets/images/python.png" alt="" class="h-10"></a>
+                    <a target="_blank" href="https://firebase.google.com/"><img src="../assets/images/firebase.png" alt="" class="h-10"></a>
                 </div>
             </div>
         </div>
 
     </main>
 </template>
+
+<script>
+export default {
+    mounted() {
+        this.addScrollAnimations();
+    },
+    methods: {
+        addScrollAnimations() {
+            const projects = document.querySelectorAll('.project');
+            const left_items = document.querySelectorAll('.left-item');
+            const right_items = document.querySelectorAll('.right-item');
+            const tech_stack_items = document.querySelectorAll('.tech-stack-item');
+
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('opacity-100', 'translate-y-0');
+                            entry.target.classList.remove('opacity-0', 'translate-y-10');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                },
+                {
+                    threshold: 0.5,
+                }
+            );
+
+            let delay = 0
+            projects.forEach((project) => {
+                project.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-500', 'ease-out', `delay-[${delay}ms]`); // Initial state
+                observer.observe(project);
+                delay += 250;
+            });
+
+            left_items.forEach((item) => {
+                item.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-500', 'ease-out', 'delay-[250ms]');
+                observer.observe(item);
+            });
+
+            right_items.forEach((item) => {
+                item.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-500', 'ease-out', 'delay-[250ms]');
+                observer.observe(item);
+            });
+
+            let stack_delay = 100
+            const delays = ['delay-100ms', 'delay-200ms', 'delay-300ms', 'delay-400ms', 'delay-500ms', 'delay-600ms', 'delay-700ms', 'delay-800ms', 'delay-900ms'];
+            tech_stack_items.forEach((item, index) => {
+                item.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-100', 'ease-out', delays[index % delays.length]);
+                observer.observe(item);
+                stack_delay += 100;
+            });
+        },
+    }
+};
+</script>

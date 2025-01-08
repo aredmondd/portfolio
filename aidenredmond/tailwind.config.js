@@ -22,6 +22,17 @@ module.exports = {
                 to: { transform: 'translateX(-100%)' },
             }
         },
+        transitionDelay: {
+            '100ms': '100ms',
+            '200ms': '200ms',
+            '300ms': '300ms',
+            '400ms': '400ms',
+            '500ms': '500ms',
+            '600ms': '600ms',
+            '700ms': '700ms',
+            '800ms': '800ms',
+            '900ms': '900ms',
+          },
     },
     screens: {
         xl: { max: "1279px" },
