@@ -3,13 +3,13 @@
         
         <!-- mobile version -->
         <div class="hidden sm:flex flex-col">
-            <img src="../../assets/images/jasiah.png" alt="" class="invert w-80 mb-2">
+            <img src="@/assets/images/jasiah.png" alt="" class="invert w-80 mb-2">
             <div class="flex justify-between items-start pb-4">
                 <a href="https://github.com/aredmondd/jasiah" target="_blank" class="underline mb-2">see the code</a>
                 <div class="flex space-x-3">
-                    <a target="_blank" href="https://developers.google.com/apps-script"><img src="../../assets/images/gas.png" alt="" class="w-6"></a>
-                    <a target="_blank" href="https://workspace.google.com/products/sheets/"><img src="../../assets/images/gs.png" alt="" class="w-6"></a>
-                    <a target="_blank" href="https://apps.shopify.com/stocky"><img src="../../assets/images/stocky.webp" alt="" class="w-6"></a>
+                    <a target="_blank" href="https://developers.google.com/apps-script"><img src="@/assets/images/gas.png" alt="" class="w-6"></a>
+                    <a target="_blank" href="https://workspace.google.com/products/sheets/"><img src="@/assets/images/gs.png" alt="" class="w-6"></a>
+                    <a target="_blank" href="https://apps.shopify.com/stocky"><img src="@/assets/images/stocky.webp" alt="" class="w-6"></a>
                 </div>
             </div>
         </div>
@@ -17,14 +17,14 @@
         <!-- desktop version -->
         <div class="sm:hidden flex justify-between items-end mb-12">
             <div>
-                <img src="../../assets/images/jasiah.png" alt="" class="invert w-80">
+                <img src="@/assets/images/jasiah.png" alt="" class="invert w-80">
             </div>
             <div class="flex flex-col items-end pb-4">
                 <a href="https://github.com/aredmondd/jasiah" target="_blank" class="underline mb-2">see the code</a>
                 <div class="flex space-x-3">
-                    <a target="_blank" href="https://developers.google.com/apps-script"><img src="../../assets/images/gas.png" alt="" class="w-8"></a>
-                    <a target="_blank" href="https://workspace.google.com/products/sheets/"><img src="../../assets/images/gs.png" alt="" class="w-8"></a>
-                    <a target="_blank" href="https://apps.shopify.com/stocky"><img src="../../assets/images/stocky.webp" alt="" class="w-8"></a>
+                    <a target="_blank" href="https://developers.google.com/apps-script"><img src="@/assets/images/gas.png" alt="" class="w-8"></a>
+                    <a target="_blank" href="https://workspace.google.com/products/sheets/"><img src="@/assets/images/gs.png" alt="" class="w-8"></a>
+                    <a target="_blank" href="https://apps.shopify.com/stocky"><img src="@/assets/images/stocky.webp" alt="" class="w-8"></a>
                 </div>
             </div>
         </div>
