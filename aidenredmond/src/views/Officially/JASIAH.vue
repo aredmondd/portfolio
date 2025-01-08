@@ -3,7 +3,7 @@
         
         <!-- mobile version -->
         <div class="hidden sm:flex flex-col">
-            <img src="@/assets/images/jasiah.png" alt="" class="invert w-80 mb-2">
+            <img src="@/assets/images/jasiah-png.png" alt="" class="invert w-80 mb-2">
             <div class="flex justify-between items-start pb-4">
                 <a href="https://github.com/aredmondd/jasiah" target="_blank" class="underline mb-2">see the code</a>
                 <div class="flex space-x-3">
@@ -17,7 +17,7 @@
         <!-- desktop version -->
         <div class="sm:hidden flex justify-between items-end mb-12">
             <div>
-                <img src="@/assets/images/jasiah.png" alt="" class="invert w-80">
+                <img src="@/assets/images/jasiah-png.png" alt="" class="invert w-80">
             </div>
             <div class="flex flex-col items-end pb-4">
                 <a href="https://github.com/aredmondd/jasiah" target="_blank" class="underline mb-2">see the code</a>

@@ -35,7 +35,7 @@ import { RouterLink } from 'vue-router'
             <RouterLink to="/Reservoir" class="project">
                 <div class="flex flex-col h-full">
                     <div class="flex items-center justify-center h-full rounded-lg hover:bg-[#0A1826] transition-all duration-500 ease-in-out">
-                        <img src="@/assets/images/reservoir.png">
+                        <img src="@/assets/images/reservoir-png.png">
                     </div>
                     <p class="text-lg text-center mt-6">A social platform for media tracking</p>
                     <p class="text-md text-black text-opacity-50 text-sm text-center mt-1">Senior Project - Fall 2024</p>
@@ -44,7 +44,7 @@ import { RouterLink } from 'vue-router'
             <RouterLink to="/nihonGO" class="project">
                 <div class="flex flex-col h-full">
                     <div class="flex items-center justify-center h-full rounded-lg hover:bg-[#f1cd9d] transition-all duration-500 ease-in-out">
-                        <img src="@/assets/images/nihongo.png">
+                        <img src="@/assets/images/nihongo-png.png">
                     </div>
                     <p class="text-center mt-6">A language-learning app focused on Japanese</p>
                     <p class="text-black text-opacity-50 text-sm text-center mt-1">Software Engineering - Fall 2024</p>
@@ -53,7 +53,7 @@ import { RouterLink } from 'vue-router'
             <RouterLink to="/JASIAH" class="project">
                 <div class="flex flex-col h-full">
                     <div class="flex items-center justify-center h-full rounded-lg hover:bg-[#ffffff] transition-all duration-500 ease-in-out hover:invert">
-                        <img src="@/assets/images/jasiah.png">
+                        <img src="@/assets/images/jasiah-png.png">
                     </div>
                     <p class="text-center mt-6">An automated inventory management script</p>
                     <p class="text-black text-opacity-50 text-sm text-center mt-1">Alter Ego Running - Summer 2024</p>
@@ -106,7 +106,7 @@ import { RouterLink } from 'vue-router'
                 <div class="flex justify-between">
                     <div class="flex flex-col">
                         <div class="flex items-end justify-start sm:justify-center">
-                            <img src="@/assets/images/fsc.svg" alt="" width="20" class="mb-2 sm:w-5">
+                            <img src="@/assets/images/fsc-svg.svg" alt="" width="20" class="mb-2 sm:w-5">
                             <h2 class="text-2xl font-bold ml-3 sm:text-xl">Florida Southern College</h2>
                         </div>
                         <p class="text-sm text-black text-opacity-50">Aug 2021 - May 2025</p>
@@ -132,7 +132,7 @@ import { RouterLink } from 'vue-router'
                 <div class="flex justify-between sm:mx-0">
                     <div class="flex flex-col">
                         <div class="flex items-center justify-start sm:justify-center">
-                            <img src="@/assets/images/aer_logo.png" alt="" width="30">
+                            <img src="@/assets/images/aer_logo_png.png" alt="" width="30">
                             <h2 class="text-3xl font-bold text-right ml-2 sm:text-center sm:text-2xl">Alter Ego Running</h2>
                         </div>
                         <p class="text-sm text-black text-opacity-50 mt-1 sm:text-xs sm:text-center sm:mb-2">Business Development Analyst (and model) - Summer '23, '24</p>
