@@ -1,4 +1,4 @@
-# aidenredmond.com
+# portfolio
 
 This is my professional & unprofessional portfolio! It holds my current projects, education, skills, and experience, but also holds my photography, favorite things, and monthly recaps.
 
@@ -10,4 +10,4 @@ This is my professional & unprofessional portfolio! It holds my current projects
 
 ## Acknowledgements
 
-All aspects of the website were design and implemented by me (aiden redmond). You can check out the final product at [aidenredmond.com](aidenredmond.com)
+All aspects of the website were design and implemented by me (aiden redmond). You can check out the final product at [aidenredmond.com](aidenredmond.com)!
